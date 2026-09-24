@@ -42,6 +42,8 @@ export async function generate(modelId, input) {
     .trim()
     .replace(/^\([^)]*\)\s*/, "")
     .trim()
+    .split("\n")[0]
+    .trim()
     .replace(/^\*+|\*+$/g, "")
     .trim()
     .replace(/^["']/, "")
